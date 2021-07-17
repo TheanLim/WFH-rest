@@ -11,7 +11,13 @@
             "matches":[
                 "<all_urls>"
             ],
-            "js": ["content.js"]
+            "js": ["content.js", "jquery.js"]
         }
-    ]
+    ],
+    "background":{
+        "scripts":["jquery.js",
+            "background.js"]
+    },
+    "web_accessible_resources":["background.js", "restTime.css"],
+    "permissions":["tabs"]
 }
