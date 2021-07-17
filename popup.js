@@ -1,7 +1,8 @@
 function triggerStartStop(){
-    console.log("Here");
-
+    var temp=document.getElementById("testing");
+    temp.innerHTML="lol"
 }
 
 let startButton = document.getElementById("startbtn");
-startButton.onclick = triggerStartStop();
+console.log("here");
+startButton.onclick = triggerStartStop;
