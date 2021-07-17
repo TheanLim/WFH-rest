@@ -1,7 +1,11 @@
 {
     "manifest_version":2,
     "name": "WFH-Rest Chrome Extension",
-    "version":"0.01",
+		"description": "An extension for wfh rest time",
+    "version":"1.0",
+		"browser_action":{
+				"default_popup": "popup.html"
+		},
     "content_scripts":[
         {
             "matches":[
@@ -9,8 +13,5 @@
             ],
             "js": ["content.js"]
         }
-    ],
-    "background": {
-        "service_worker": ["background.js"]
-    }
+    ]
 }
