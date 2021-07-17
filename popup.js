@@ -1,19 +1,9 @@
 var timer = 5000;
 
 function startCount(){
-    // chrome.runtime.sendMessage({cmd: 'START', timer: 5000});
-
-    const options = {
-        type: "basic",
-        iconUrl: "./temp.png",
-        title: "Popup.js",
-        message: "Hello from popup.js!"
-    };
-
-    chrome.notifications.create("", options, function(id){
-        console.log('in noti');
-    });
+    chrome.runtime.sendMessage({cmd: 'START', timer: 5000});
 }
+
 function stopCount(){
     chrome.runtime.sendMessage({cmd: 'STOP'});
 }
